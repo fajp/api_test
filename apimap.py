@@ -3,28 +3,7 @@ import json
 
 
 class ApiMap:
-
-    config = {
-        'token': {
-            'url': 'https://restful-booker.herokuapp.com/auth',
-            'headers': {
-                'Content-type': 'application/json'},
-            'data': {
-                'username' : 'admin',
-                'password' : 'password123'
-            }
-        },
-        'bookings_ids': {
-            'base-url': 'https://restful-booker.herokuapp.com/booking',
-            'filters': {
-                'first_name': 'firstname',
-                'last_name': 'lastname',
-                'check_in': 'checkin',
-                'check_out': 'checkout'
-            }
-        }
-    }
-
+    """Helper for restful-booker API"""
 
     def __init__(self, username: str = "admin",
                 password: str = "password123"):
