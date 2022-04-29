@@ -14,3 +14,4 @@ print(response.json())
 session = requests.Session()
 response = session.get("https://restful-booker.herokuapp.com/booking")
 print(response.json())
+
